@@ -1,0 +1,88 @@
+body {
+margin: 0;
+padding: 0;
+background-color: lightgray;
+display:flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.horloge{
+background-color: white;
+border: 20px solid orange;
+border-radius: 20%;
+padding: 2rem;
+box-shadow:
+0 0 0 4px rgba(0,0,0,0.1),
+inset 0 0 0 3px #EFEFEF,
+inset 0 0 10px black,
+0 0 10px rgba(0,0,0,0.2);
+
+}
+.cadran {
+width: 30rem;
+height: 30rem;
+position:relative;
+
+}
+
+.heure {
+width: 20%;
+height:10px;
+background: black;
+position: absolute;
+margin: auto;
+top:0;
+left:0;
+bottom:0;
+right:-23%;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+transform-origin: left center;
+transform: rotate(0deg);
+
+}
+.minute{
+width: 35%;
+height:5px;
+background: black;
+position: absolute;
+margin: auto;
+top:0;
+left:0;
+bottom:0;
+right:-35%;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+transform-origin: left center;
+transform: rotate(0deg);
+
+}
+.seconde{
+width: 50%;
+height: 2px;
+background:lightgray;
+position: absolute;
+margin: auto;
+top:0%;
+left:0;
+bottom:0%;
+right:-50%;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+transform-origin: left center;
+transform: rotate(0deg);
+
+}
+.point{
+width: 5px;
+height: 5px;
+z-index: 2;
+border: 3px solid orange;
+background-color: black;
+padding:4px;
+border-radius: 20%;
+position: absolute;
+margin: auto;
+top:0;
+left:0;
+bottom: 0;
+right:0;
+}
